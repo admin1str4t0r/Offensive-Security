@@ -383,7 +383,29 @@ body {
     overflow-x: hidden;
 }
 
+#boot-text div {
+    font-size: 0.9vw;
+    color: white;
+    font-family: monospace;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #boot-text div {
+        font-size: 1vw;
+        padding: 5px;
+    }
+}
+
 @media (max-width: 1023px) {
+    #boot-text div {
+        font-size: 1vw;
+        padding: 5px;
+        width: 100%;
+    }
+
     header {
         padding: 10px 40px;
     }
@@ -432,6 +454,10 @@ body {
         transform: scale(1.05);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     }
+
+    #boot-text div {
+        font-size: 1vw;
+    }
 }
 
 header {
@@ -450,7 +476,7 @@ header {
 @media (max-width: 480px) {
     .title {
         padding-left: 15px;
-        font-size: 1.5em;
+        font-size: 1vw;
     }
 
     #Services {
@@ -463,5 +489,9 @@ header {
 
     .content-container {
         flex-direction: column;
+    }
+
+    #boot-text div {
+        font-size: 1vw;
     }
 }
